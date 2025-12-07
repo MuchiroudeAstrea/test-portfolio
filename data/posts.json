@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "slug": "getting-started-web-design",
+    "title": "Getting Started with Modern Web Design",
+    "date": "2025-01-15",
+    "author": "Alex",
+    "excerpt": "A comprehensive guide to starting your journey in modern web design. Learn the fundamentals and best practices.",
+    "tags": ["web-design", "tutorial"],
+    "content": "# Getting Started with Modern Web Design\n\nWeb design has evolved dramatically over the past decade. Today, successful websites combine beautiful aesthetics with functional user experience. Let's explore the key principles.\n\n## Core Principles\n\n1. **Typography** - Choose fonts that reflect your brand\n2. **Color Theory** - Use complementary colors effectively\n3. **Whitespace** - Don't fear empty space\n4. **Responsive Design** - Mobile-first approach\n\n## Getting Started\n\nBegin by studying existing designs. Look at sites you admire and analyze their:\n\n- Layout structure\n- Color palettes\n- Typography choices\n- Micro-interactions\n\n### Tools You'll Need\n\n```\nFigma - Design tool\nVS Code - Code editor\nChrome DevTools - Browser inspector\n```\n\nStart small with simple landing pages, then gradually increase complexity. Practice is key to improvement.\n\n> The best designs are often the simplest ones.\n\nHappy designing!"
+  },
+  {
+    "id": 2,
+    "slug": "javascript-performance-tips",
+    "title": "JavaScript Performance Optimization Tips",
+    "date": "2025-01-10",
+    "author": "Alex",
+    "excerpt": "Learn practical techniques to optimize your JavaScript code for better performance and faster load times.",
+    "tags": ["javascript", "performance"],
+    "content": "# JavaScript Performance Optimization Tips\n\nPerformance matters. Every millisecond counts when it comes to user experience and SEO rankings.\n\n## Key Optimization Techniques\n\n### 1. Code Splitting\n\nDivide your code into smaller chunks and load only what's needed:\n\n```javascript\n// Bad: All code in one file\nimport { heavyFeature } from './heavy.js';\n\n// Good: Dynamic import when needed\nconst module = await import('./heavy.js');\n```\n\n### 2. Lazy Loading\n\nDefer loading resources until they're actually needed:\n\n```javascript\nconst img = new Image();\nimg.addEventListener('load', () => {\n  document.body.appendChild(img);\n});\nimg.src = 'large-image.jpg';\n```\n\n### 3. Debouncing and Throttling\n\nPrevent excessive function calls:\n\n```javascript\nfunction debounce(fn, delay) {\n  let timeoutId;\n  return function(...args) {\n    clearTimeout(timeoutId);\n    timeoutId = setTimeout(() => fn(...args), delay);\n  };\n}\n```\n\n## Measuring Performance\n\nUse browser tools:\n\n- Chrome DevTools Performance tab\n- Lighthouse for audits\n- Web Vitals for real-world metrics\n\nOptimization is an ongoing process. Monitor, measure, and improve continuously."
+  },
+  {
+    "id": 3,
+    "slug": "css-grid-layouts",
+    "title": "Mastering CSS Grid for Modern Layouts",
+    "date": "2025-01-05",
+    "author": "Alex",
+    "excerpt": "Explore advanced CSS Grid techniques to create responsive, modern layouts without frameworks.",
+    "tags": ["css", "layout"],
+    "content": "# Mastering CSS Grid for Modern Layouts\n\nCSS Grid is one of the most powerful layout tools available. It enables complex, responsive designs with minimal code.\n\n## Grid Basics\n\nDefine a grid container:\n\n```css\n.grid-container {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-rows: auto;\n  gap: 2rem;\n}\n```\n\n## Responsive Grids\n\nCreate layouts that adapt to different screen sizes:\n\n```css\n@media (max-width: 768px) {\n  .grid-container {\n    grid-template-columns: 1fr;\n  }\n}\n```\n\n## Advanced Techniques\n\n### Auto-Fit and Auto-Fill\n\n```css\n.auto-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n  gap: 1rem;\n}\n```\n\nThis creates a responsive grid that adjusts the number of columns based on available space.\n\n## Grid Areas\n\nName your grid areas for more semantic layouts:\n\n```css\n.layout {\n  display: grid;\n  grid-template-areas:\n    \"header header\"\n    \"sidebar main\"\n    \"footer footer\";\n}\n```\n\n## Conclusion\n\nCSS Grid transforms how we approach web layouts. Start experimenting today!"
+  }
+]

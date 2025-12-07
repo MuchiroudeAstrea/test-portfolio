@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Ambient Dreams",
+    "artist": "Lo-Fi Studio",
+    "duration": 240,
+    "file": "assets/audio/ambient-dreams.mp3"
+  },
+  {
+    "name": "Midnight Vibes",
+    "artist": "Chill Beats",
+    "duration": 180,
+    "file": "assets/audio/midnight-vibes.mp3"
+  },
+  {
+    "name": "Sunset Horizon",
+    "artist": "Relaxing Tunes",
+    "duration": 200,
+    "file": "assets/audio/sunset-horizon.mp3"
+  }
+]

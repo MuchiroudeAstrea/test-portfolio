@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitemap for portfolio site">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Sitemap - My Portfolio</title>
+</head>
+<body>
+  <div id="app">
+    <header class="navbar">
+      <nav class="nav-container">
+        <a href="index.html" class="logo">Sage</a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="index.html#music-player" class="nav-link">Music</a></li>
+        </ul>
+        <div class="nav-controls">
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section style="max-width: 800px; margin: 4rem auto;">
+        <h1 style="font-family: Georgia, serif; font-size: 2.5rem; margin-bottom: 2rem;">Sitemap</h1>
+        
+        <h2 style="margin-top: 2rem; margin-bottom: 1rem;">Main Pages</h2>
+        <ul style="line-height: 2;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+
+        <h2 style="margin-top: 2rem; margin-bottom: 1rem;">Sample Blog Posts</h2>
+        <ul id="postsList" style="line-height: 2;"></ul>
+
+        <h2 style="margin-top: 2rem; margin-bottom: 1rem;">Sample Projects</h2>
+        <ul id="projectsList" style="line-height: 2;"></ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Alex. Built with vanilla HTML, CSS, and JavaScript.</p>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Load sitemap data
+    async function loadSitemap() {
+      try {
+        const postsRes = await fetch('data/posts.json');
+        const posts = await postsRes.json();
+        const postsList = document.getElementById('postsList');
+        posts.forEach(post => {
+          const li = document.createElement('li');
+          li.innerHTML = `<a href="post.html?id=${post.id}">${post.title}</a>`;
+          postsList.appendChild(li);
+        });
+
+        const projectsRes = await fetch('data/projects.json');
+        const projects = await projectsRes.json();
+        const projectsList = document.getElementById('projectsList');
+        projects.forEach(project => {
+          const li = document.createElement('li');
+          li.innerHTML = `<a href="projects.html">${project.title}</a>`;
+          projectsList.appendChild(li);
+        });
+      } catch (error) {
+        console.error('Error loading sitemap:', error);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadSitemap);
+  </script>
+</body>
+</html>

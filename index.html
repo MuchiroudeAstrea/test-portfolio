@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio and blog of a creative developer. View projects, read blog posts, and connect.">
+  <meta property="og:title" content="My Portfolio">
+  <meta property="og:description" content="Portfolio and blog of a creative developer.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourportfolio.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="My Portfolio">
+  <meta name="twitter:description" content="Portfolio and blog of a creative developer.">
+  <link rel="canonical" href="https://yourportfolio.com">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>✧</text></svg>">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>My Portfolio</title>
+</head>
+<body>
+  <div id="app">
+    <!-- Navigation -->
+    <header class="navbar">
+      <nav class="nav-container">
+        <a href="index.html" class="logo">Sage</a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="#music-player" class="nav-link">Music</a></li>
+        </ul>
+        <div class="nav-controls">
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <img src="/placeholder.svg?height=160&width=160" alt="Profile avatar" class="avatar">
+          <h1 class="hero-title">Hi, I'm Alex</h1>
+          <p class="hero-subtitle">Creative Developer & Designer</p>
+          <p class="hero-bio">I craft beautiful, interactive experiences on the web. Exploring the intersection of design and code.</p>
+          <div class="hero-ctas">
+            <a href="projects.html" class="btn btn-primary">View Projects</a>
+            <a href="blog.html" class="btn btn-secondary">Read Blog</a>
+          </div>
+          <div class="social-icons">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">𝕏</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">◉</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a href="mailto:hello@example.com" aria-label="Email">✉</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Music Player Preview -->
+      <section id="music-player" class="music-section">
+        <h2>Now Playing</h2>
+        <div id="playerContainer" class="music-player-wrapper"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Alex. Built with vanilla HTML, CSS, and JavaScript.</p>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/music-player.js"></script>
+</body>
+</html>

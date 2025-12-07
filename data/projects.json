@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Interactive Design Dashboard",
+    "description": "A modern dashboard for managing design projects with real-time collaboration features.",
+    "longDescription": "Built a comprehensive design dashboard that enables teams to collaborate on design projects in real-time. Features include project management, file uploads, version control, and team messaging.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["React", "TypeScript", "Tailwind"],
+    "tech": ["React", "TypeScript", "Node.js", "MongoDB"],
+    "liveLink": "https://design-dashboard-demo.vercel.app",
+    "repoLink": "https://github.com/yourusername/design-dashboard"
+  },
+  {
+    "id": 2,
+    "title": "Retro Synthwave Portfolio",
+    "description": "A nostalgic portfolio website inspired by 80s synthwave aesthetic with animated elements.",
+    "longDescription": "Created a visually striking portfolio using retro synthwave design principles with smooth animations and interactive elements. Focused on creating an immersive user experience with attention to typography and color theory.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["Web Design", "Animation", "CSS"],
+    "tech": ["HTML", "CSS", "JavaScript", "GSAP"],
+    "liveLink": "https://synthwave-portfolio-demo.vercel.app",
+    "repoLink": "https://github.com/yourusername/synthwave-portfolio"
+  },
+  {
+    "id": 3,
+    "title": "E-Commerce Platform",
+    "description": "Full-stack e-commerce solution with product catalog, shopping cart, and payment integration.",
+    "longDescription": "Developed a complete e-commerce platform from scratch with features including product catalog, user authentication, shopping cart management, and secure payment processing.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["React", "Node.js", "MongoDB"],
+    "tech": ["Next.js", "Stripe", "PostgreSQL", "Vercel"],
+    "liveLink": "https://ecommerce-demo.vercel.app",
+    "repoLink": "https://github.com/yourusername/ecommerce-platform"
+  }
+]

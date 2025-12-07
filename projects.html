@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View my portfolio projects and case studies.">
+  <meta property="og:title" content="Projects">
+  <meta property="og:description" content="View my portfolio projects and case studies.">
+  <link rel="canonical" href="https://yourportfolio.com/projects">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Projects - My Portfolio</title>
+</head>
+<body>
+  <div id="app">
+    <header class="navbar">
+      <nav class="nav-container">
+        <a href="index.html" class="logo">Sage</a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="index.html#music-player" class="nav-link">Music</a></li>
+        </ul>
+        <div class="nav-controls">
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="projects-section">
+        <h1>Projects</h1>
+        <p class="section-subtitle">A selection of work I'm proud of</p>
+
+        <!-- Filter Tags -->
+        <div class="filter-tags" id="filterTags">
+          <button class="tag-btn active" data-tag="all">All</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Alex. Built with vanilla HTML, CSS, and JavaScript.</p>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/projects.js"></script>
+</body>
+</html>

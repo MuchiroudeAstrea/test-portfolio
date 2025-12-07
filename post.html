@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Blog Post - My Portfolio</title>
+</head>
+<body>
+  <div id="app">
+    <header class="navbar">
+      <nav class="nav-container">
+        <a href="index.html" class="logo">Sage</a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="index.html#music-player" class="nav-link">Music</a></li>
+        </ul>
+        <div class="nav-controls">
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="post-container">
+      <article id="postContent"></article>
+      <a href="blog.html" class="back-link">← Back to Blog</a>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Alex. Built with vanilla HTML, CSS, and JavaScript.</p>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/markdown-parser.js"></script>
+  <script src="assets/js/post.js"></script>
+</body>
+</html>
